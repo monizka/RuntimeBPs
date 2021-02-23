@@ -1,29 +1,13 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.25",
+	"EngineAssociation": "{7DE36AAA-4376-754F-EC86-A1B2F8D8D7F6}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "RuntimeBlueprints",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"UMG",
-				"CoreUObject",
-				"Engine"
-			]
-		},
-		{
-			"Name": "RuntimeBpExample",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"UMG",
-				"Engine",
-				"CoreUObject",
-				"RuntimeBlueprints"
-			]
+			"LoadingPhase": "Default"
 		}
 	]
 }
