@@ -12,9 +12,9 @@ public class RuntimeBlueprintsEditorTarget : TargetRules
 
         // For some reason, the LongUnion update does not happen after the first build since the change. You will have to cancel and build again to have the TypeAmount value updated.
         // This seems to be a bug with UHT, although unsure.
-        int TypeAmount = 29;
+        int TypeAmount = 28;
         string UnionScript = "\"$(ProjectDir)\\Source\\UpdateLongUnion.ps1\"";
-        string FilePath = "\"$(ProjectDir)\\Source\\RuntimeBlueprints\\LongUnion.h\"";
+        string FilePath = "\"$(ProjectDir)\\Plugins\\RuntimeBlueprints\\Source\\RuntimeBlueprints\\Public\\LongUnion.h\"";
         string UnionPath = "\"$(EngineDir)\\Source\\Runtime\\Core\\Public\\Containers\\Union.h\"";
 
         PreBuildSteps.Add("powershell -executionpolicy bypass -file " + UnionScript +
@@ -24,7 +24,7 @@ public class RuntimeBlueprintsEditorTarget : TargetRules
 
         //bUseUBTMakefiles = false;
 
-        ExtraModuleNames.AddRange( new string[] { "RuntimeBpExample", "RuntimeBlueprints" } );
+        ExtraModuleNames.AddRange( new string[] { "RuntimeBlueprints" } );
 
 	}
 }

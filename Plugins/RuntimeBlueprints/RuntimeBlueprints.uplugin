@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Runtime Blueprints",
+	"Description": "This project allows for visual scripting in UE4 similar to Blueprints, but at runtime. The way this is set up does not make use of any UE4 boilerplate and could with a few adjustments be used in another engine.",
+	"Category": "Scripting",
+	"CreatedBy": "Open Source",
+	"CreatedByURL": "https://github.com/HiIAmMoot/RuntimeBPs",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "RuntimeBlueprints",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
